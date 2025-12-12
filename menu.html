@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Browse our menu of handmade chocolates, cakes, cupcakes, cheesecakes, and gift boxes. Custom orders available." />
+  <title>Menu - The Sugar Chocolate</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="The Sugar Chocolate Home">
+        <img src="public/images/logo.png" alt="The Sugar Chocolate logo" width="150" height="auto">
+      </a>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="page-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>Explore our delicious collection of handmade treats — chocolates, cakes, cupcakes, cheesecakes & gift boxes.</p>
+      </div>
+    </section>
+
+    <section class="menu-section section">
+      <div class="container">
+
+        <!-- Search -->
+        <div class="search-container">
+          <input type="search" id="search-input" class="search-input" placeholder="Search products..." aria-label="Search products">
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-buttons" role="navigation" aria-label="Product categories">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="chocolates">Chocolates</button>
+          <button class="filter-btn" data-category="cakes">Cakes</button>
+          <button class="filter-btn" data-category="cupcakes">Cupcakes</button>
+          <button class="filter-btn" data-category="cheesecakes">Cheesecakes</button>
+          <button class="filter-btn" data-category="giftboxes">Gift Boxes</button>
+        </div>
+
+        <!-- Products grid -->
+        <div class="products-grid" id="products-grid" aria-live="polite">
+          <!-- Product cards (static markup) -->
+          <!-- Card 1 -->
+          <article class="product-card" data-id="p1" data-name="Assorted Chocolate Truffles" data-category="chocolates" data-price-from="450" data-price-to="650" data-eggless="true">
+            <div class="product-image">
+              <img
+                src="assets/images/hero_chocolates_board_large.jpg"
+                srcset="assets/images/hero_chocolates_board_480.jpg 480w, assets/images/hero_chocolates_board_900.jpg 900w, assets/images/hero_chocolates_board_large.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Assorted handmade chocolate truffles on a wooden board"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Assorted Chocolate Truffles</h3>
+              <p class="product-desc">A box of 12 assorted handcrafted truffles — dark, milk & flavored ganache centers. Perfect for gifting.</p>
+              <div class="product-meta">
+                <span class="price">₹450 - ₹650</span>
+                <span class="badge">Eggless</span>
+                <span class="badge bestseller">Bestseller</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p1" aria-label="Order Assorted Chocolate Truffles">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card" data-id="p2" data-name="Strawberry Dark Bonbons" data-category="chocolates" data-price-from="350" data-price-to="500" data-eggless="false">
+            <div class="product-image">
+              <img
+                src="assets/images/strawberry_dark_chocolates.jpg"
+                srcset="assets/images/strawberry_dark_chocolates_480.jpg 480w, assets/images/strawberry_dark_chocolates_900.jpg 900w, assets/images/strawberry_dark_chocolates.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Strawberry flavored dark chocolate bonbons with sliced strawberries"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Strawberry Dark Bonbons</h3>
+              <p class="product-desc">Rich dark chocolate bonbons filled with fresh strawberry ganache — boxed assortments of 8/12/20.</p>
+              <div class="product-meta">
+                <span class="price">₹350 - ₹500</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p2" aria-label="Order Strawberry Dark Bonbons">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card" data-id="p3" data-name="Ferrero Inspired Chocolate Cake (8&quot;)" data-category="cakes" data-price-from="1200" data-price-to="1800" data-eggless="false">
+            <div class="product-image">
+              <img
+                src="assets/images/ferrero_chocolate_cake_8inch.jpg"
+                srcset="assets/images/ferrero_chocolate_cake_8inch_480.jpg 480w, assets/images/ferrero_chocolate_cake_8inch_900.jpg 900w, assets/images/ferrero_chocolate_cake_8inch.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="8-inch Ferrero style chocolate cake with hazelnuts"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Ferrero Inspired Chocolate Cake — 8"</h3>
+              <p class="product-desc">Decadent multi-layer chocolate cake topped with hazelnuts and Ferrero-style chocolates. Serves 8–10.</p>
+              <div class="product-meta">
+                <span class="price">₹1,200 - ₹1,800</span>
+                <span class="badge">Custom</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p3" aria-label="Order Ferrero Inspired Chocolate Cake">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card" data-id="p4" data-name="Eggless Chocolate Cupcakes (6 pcs)" data-category="cupcakes" data-price-from="300" data-price-to="450" data-eggless="true">
+            <div class="product-image">
+              <img
+                src="assets/images/eggless_chocolate_cupcakes.jpg"
+                srcset="assets/images/eggless_chocolate_cupcakes_480.jpg 480w, assets/images/eggless_chocolate_cupcakes_900.jpg 900w, assets/images/eggless_chocolate_cupcakes.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Plate of eggless chocolate cupcakes with frosting and sprinkles"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Eggless Chocolate Cupcakes — 6 pcs</h3>
+              <p class="product-desc">Soft, moist eggless cupcakes with rich chocolate frosting — great for small gatherings.</p>
+              <div class="product-meta">
+                <span class="price">₹300 - ₹450</span>
+                <span class="badge">Eggless</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p4" aria-label="Order Eggless Chocolate Cupcakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card" data-id="p5" data-name="Chocolate Swirl Cheesecake — Slice" data-category="cheesecakes" data-price-from="180" data-price-to="250" data-eggless="false">
+            <div class="product-image">
+              <img
+                src="assets/images/cheesecake_slice_chocolate_swirl.jpg"
+                srcset="assets/images/cheesecake_slice_chocolate_swirl_480.jpg 480w, assets/images/cheesecake_slice_chocolate_swirl_900.jpg 900w, assets/images/cheesecake_slice_chocolate_swirl.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Single slice of chocolate swirl cheesecake on a plate"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Chocolate Swirl Cheesecake — Slice</h3>
+              <p class="product-desc">Creamy cheesecake with a decadent chocolate swirl. Available by slice or full cake.</p>
+              <div class="product-meta">
+                <span class="price">₹180 - ₹250</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p5" aria-label="Order Chocolate Swirl Cheesecake">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card" data-id="p6" data-name="Premium Gift Box — 16 pcs" data-category="giftboxes" data-price-from="900" data-price-to="1200" data-eggless="true">
+            <div class="product-image">
+              <img
+                src="assets/images/gift_box_assorted_chocolates.jpg"
+                srcset="assets/images/gift_box_assorted_chocolates_480.jpg 480w, assets/images/gift_box_assorted_chocolates_900.jpg 900w, assets/images/gift_box_assorted_chocolates.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Open premium gift box filled with assorted handmade chocolates"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Premium Gift Box — 16 pcs</h3>
+              <p class="product-desc">Elegant box of 16 assorted chocolates with ribbon and optional personalized note.</p>
+              <div class="product-meta">
+                <span class="price">₹900 - ₹1,200</span>
+                <span class="badge">Gift</span>
+                <span class="badge">Eggless</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p6" aria-label="Order Premium Gift Box">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="product-card" data-id="p7" data-name="Chocolate Cake — Slice" data-category="cakes" data-price-from="220" data-price-to="320" data-eggless="false">
+            <div class="product-image">
+              <img
+                src="assets/images/chocolate_cake_slice_texture.jpg"
+                srcset="assets/images/chocolate_cake_slice_texture_480.jpg 480w, assets/images/chocolate_cake_slice_texture_900.jpg 900w, assets/images/chocolate_cake_slice_texture.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Close-up of a cut slice of chocolate cake showing moist layers"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Chocolate Cake — Slice</h3>
+              <p class="product-desc">Single slice of our signature moist chocolate cake. Also available as whole cake (custom sizes).</p>
+              <div class="product-meta">
+                <span class="price">₹220 - ₹320</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p7" aria-label="Order Chocolate Cake Slice">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="product-card" data-id="p8" data-name="Assorted Mini Desserts Tray" data-category="cupcakes" data-price-from="600" data-price-to="850" data-eggless="false">
+            <div class="product-image">
+              <img
+                src="assets/images/cupcakes_mini_desserts.jpg"
+                srcset="assets/images/cupcakes_mini_desserts_480.jpg 480w, assets/images/cupcakes_mini_desserts_900.jpg 900w, assets/images/cupcakes_mini_desserts.jpg 1600w"
+                sizes="(max-width:600px) 90vw, (max-width:1200px) 45vw, 33vw"
+                alt="Tray of assorted mini desserts: cupcakes, mini cheesecakes, chocolate cups"
+                loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Assorted Mini Desserts Tray</h3>
+              <p class="product-desc">Tray of 12 mini desserts — mini cupcakes, cheesecakes, chocolate cups. Great for parties.</p>
+              <div class="product-meta">
+                <span class="price">₹600 - ₹850</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn btn-primary order-now-btn quick-order-btn" data-product-id="p8" aria-label="Order Assorted Mini Desserts Tray">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div id="no-results" class="no-results" style="display:none;">
+          <p>No products found matching your criteria.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="public/images/logo.png" alt="The Sugar Chocolate Logo" class="footer-logo" width="120" height="auto">
+                    <p>Handcrafted chocolates and desserts made with love</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                       
+                        <li>Address: Ahmedabad, Gujarat</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/thesugarchocolate255/" aria-label="Instagram">Instagram</a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Sugar Chocolate. All rights reserved. Made with ❤️ by <a href="https://www.webriseglobal.com">Webrise Global</a> </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

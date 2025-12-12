@@ -1,0 +1,82 @@
+[
+  {
+    "id": "choco-truffles",
+    "name": "Handmade Chocolate Truffles",
+    "category": "chocolates",
+    "description": "Assorted premium chocolate truffles with various fillings including dark chocolate, hazelnut, and strawberry.",
+    "price": "₹600 - ₹1200",
+    "image": "assets/images/hero-chocolates.jpg",
+    "eggless": true,
+    "badges": ["Bestseller"]
+  },
+  {
+    "id": "strawberry-bonbons",
+    "name": "Strawberry Dark Chocolate Bonbons",
+    "category": "chocolates",
+    "description": "Luxurious dark chocolate bonbons infused with fresh strawberry flavor.",
+    "price": "₹800 - ₹1500",
+    "image": "assets/images/strawberry-bonbons.jpg",
+    "eggless": true,
+    "badges": ["Premium"]
+  },
+  {
+    "id": "ferrero-cake",
+    "name": "Ferrero Rocher Style Cake",
+    "category": "cakes",
+    "description": "Decadent chocolate hazelnut cake inspired by the classic Ferrero Rocher, layered with chocolate ganache.",
+    "price": "₹1200 - ₹2500",
+    "image": "assets/images/ferrero-cake.jpg",
+    "eggless": false,
+    "badges": ["Popular"]
+  },
+  {
+    "id": "choco-cupcakes",
+    "name": "Eggless Chocolate Cupcakes",
+    "category": "cupcakes",
+    "description": "Moist and fluffy eggless chocolate cupcakes topped with rich chocolate frosting.",
+    "price": "₹400 - ₹800",
+    "image": "assets/images/chocolate-cupcakes.jpg",
+    "eggless": true,
+    "badges": ["Eggless Available"]
+  },
+  {
+    "id": "choco-cheesecake",
+    "name": "Chocolate Swirl Cheesecake",
+    "category": "cheesecakes",
+    "description": "Creamy cheesecake with elegant chocolate swirls and a rich chocolate cookie crust.",
+    "price": "₹1500 - ₹2800",
+    "image": "assets/images/cheesecake-slice.jpg",
+    "eggless": false,
+    "badges": ["Premium"]
+  },
+  {
+    "id": "premium-giftbox",
+    "name": "Premium Chocolate Gift Box",
+    "category": "giftboxes",
+    "description": "Elegant gift box filled with an assortment of our finest handmade chocolates, perfect for any occasion.",
+    "price": "₹1000 - ₹3000",
+    "image": "assets/images/premium-giftbox.jpg",
+    "eggless": true,
+    "badges": ["Bestseller", "Gift"]
+  },
+  {
+    "id": "mini-desserts",
+    "name": "Mini Desserts Platter",
+    "category": "cupcakes",
+    "description": "A beautiful assortment of mini cupcakes, chocolate cups, and petit fours.",
+    "price": "₹800 - ₹1600",
+    "image": "assets/images/mini-desserts-tray.jpg",
+    "eggless": true,
+    "badges": ["Party Special"]
+  },
+  {
+    "id": "chocolate-cake",
+    "name": "Classic Chocolate Layer Cake",
+    "category": "cakes",
+    "description": "Rich, moist chocolate cake with multiple layers of chocolate ganache filling.",
+    "price": "₹1000 - ₹2200",
+    "image": "assets/images/cake-slice-layers.jpg",
+    "eggless": false,
+    "badges": ["Classic"]
+  }
+]

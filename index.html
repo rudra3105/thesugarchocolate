@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Sugar Chocolate - Handmade artisan chocolates, cakes, and desserts by Shreya Soni. Premium homemade bakery specializing in custom chocolate creations.">
+    <meta name="keywords" content="handmade chocolates, artisan bakery, custom cakes, chocolate truffles, homemade desserts">
+    <meta name="author" content="Shreya Soni">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Sugar Chocolate - Homemade Bakery">
+    <meta property="og:description" content="Handmade artisan chocolates, cakes, and desserts crafted with love">
+    <meta property="og:image" content="assets/images/hero-chocolates.jpg">
+    <meta property="og:url" content="https://thesugarchocolate.com">
+    
+    <title>The Sugar Chocolate - Homemade Artisan Bakery</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="The Sugar Chocolate Home">
+                <img src="public/images/logo.png" alt="The Sugar Chocolate Logo" width="150" height="auto">
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="region" aria-label="Welcome banner">
+        <div class="hero-content">
+            <h1 class="hero-title">Handcrafted Chocolate Perfection</h1>
+            <p class="hero-subtitle">Every piece is made with love, premium ingredients, and years of passion</p>
+            <div class="hero-buttons">
+                <a href="contact.html#order-form" class="btn btn-primary">Order Now</a>
+                <a href="menu.html" class="btn btn-secondary">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero-chocolates.jpg" alt="Assorted handmade chocolate truffles on rustic wooden board" loading="eager">
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview section" role="region" aria-label="About us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to The Sugar Chocolate</h2>
+                <p class="section-subtitle">Where passion meets perfection</p>
+            </div>
+            <div class="about-preview-content">
+                <div class="about-text">
+                    <p>Founded by Shreya Soni, The Sugar Chocolate is a labor of love dedicated to creating exceptional handmade chocolates and desserts. Every creation is crafted with premium ingredients and meticulous attention to detail.</p>
+                    <p>From rich chocolate truffles to elegant cakes, each product tells a story of passion, quality, and artisanal craftsmanship.</p>
+                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/Shreya.jpg" alt="Hand holding an artisan chocolate truffle" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured section bg-light" role="region" aria-label="Featured products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Signature Collection</h2>
+                <p class="section-subtitle">Handpicked favorites that define our craft</p>
+            </div>
+            <div class="products-grid" id="featured-products">
+                <!-- Products loaded via JavaScript -->
+            </div>
+            <div class="section-footer">
+                <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview section" role="region" aria-label="Gallery preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sweet Moments</h2>
+                <p class="section-subtitle">A glimpse into our chocolate artistry</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/strawberry-bonbons.jpg" alt="Strawberry dark chocolate bonbons with fresh strawberries" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ferrero-cake.jpg" alt="Ferrero-style chocolate hazelnut cake on ceramic stand" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/chocolate-cupcakes.jpg" alt="Eggless chocolate cupcakes with frosting" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/cheesecake-slice.jpg" alt="Chocolate swirl cheesecake slice on white plate" loading="lazy">
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section bg-light" role="region" aria-label="Customer testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <p class="testimonial-text">"The most amazing chocolates I've ever tasted! Each piece is like a work of art. Highly recommended for any special occasion."</p>
+                    <p class="testimonial-author">— Priya Sharma</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Shreya's passion for chocolate-making shines through in every bite. The gift boxes are absolutely stunning and delicious!"</p>
+                    <p class="testimonial-author">— Rudra Bhatt</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Best eggless cakes in town! Perfect for our family celebrations. The attention to detail is remarkable."</p>
+                    <p class="testimonial-author">— Anjali Patel</p>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn prev" aria-label="Previous testimonial">‹</button>
+                <button class="testimonial-btn next" aria-label="Next testimonial">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="public/images/logo.png" alt="The Sugar Chocolate Logo" class="footer-logo" width="120" height="auto">
+                    <p>Handcrafted chocolates and desserts made with love</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                       
+                        <li>Address: Ahmedabad, Gujarat</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/thesugarchocolate255/" aria-label="Instagram">Instagram</a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Sugar Chocolate. All rights reserved. Made with ❤️ by <a href="https://www.webriseglobal.com">Webrise Global</a> </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

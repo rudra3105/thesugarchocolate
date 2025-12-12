@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Sugar Chocolate for custom orders, inquiries, or to place an order. We're here to help with all your chocolate needs.">
+    <title>Contact Us - The Sugar Chocolate</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="The Sugar Chocolate Home">
+                <img src="public/images/logo.png" alt="The Sugar Chocolate Logo" width="150" height="auto">
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-section section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>Have a question or ready to place an order? Reach out to us through any of the following channels:</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:thesugarchocolate@gmail.com">thesugarchocolate@gmail.com</a></p>
+                            </div>
+                           
+                            <div class="contact-item">
+                                <h3>Location</h3>
+                                <p>Ahmedabad, Gujarat</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: By appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <h3>Follow Us</h3>
+                            
+                            <a href="https://www.instagram.com/thesugarchocolate255/" class="social-link">Instagram</a>
+                          
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Name *</label>
+                                <input type="text" id="contact-name" name="name" required aria-required="true">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input type="email" id="contact-email" name="email" required aria-required="true">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone</label>
+                                <input type="tel" id="contact-phone" name="phone">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <input type="text" id="contact-subject" name="subject" required aria-required="true">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="5" required aria-required="true"></textarea>
+                                <span class="error-message"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+        <section id="order-form" class="order-form-section section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Place an Order</h2>
+                    <p class="section-subtitle">Fill out the form below to place your order</p>
+                </div>
+                <form id="order-form-main" class="order-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name">Name *</label>
+                            <input type="text" id="order-name" name="name" required aria-required="true">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email">Email *</label>
+                            <input type="email" id="order-email" name="email" required aria-required="true">
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-phone">Phone *</label>
+                            <input type="tel" id="order-phone" name="phone" required aria-required="true">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-date">Delivery Date *</label>
+                            <input type="date" id="order-date" name="date" required aria-required="true">
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-address">Delivery Address *</label>
+                        <textarea id="order-address" name="address" rows="3" required aria-required="true"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-product">Product/Category *</label>
+                        <select id="order-product" name="product" required aria-required="true">
+                            <option value="">Select a product category</option>
+                            <option value="chocolates">Handmade Chocolates</option>
+                            <option value="cakes">Cakes</option>
+                            <option value="cupcakes">Cupcakes</option>
+                            <option value="cheesecakes">Cheesecakes</option>
+                            <option value="giftboxes">Gift Boxes</option>
+                            <option value="custom">Custom Order</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-details">Order Details *</label>
+                        <textarea id="order-details" name="details" rows="4" placeholder="Please describe your order, including quantities, flavors, and any special requests" required aria-required="true"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="order-eggless" name="eggless">
+                            Eggless options required
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="public/images/logo.png" alt="The Sugar Chocolate Logo" class="footer-logo" width="120" height="auto">
+                    <p>Handcrafted chocolates and desserts made with love</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                       
+                        <li>Address: Ahmedabad, Gujarat</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/thesugarchocolate255/" aria-label="Instagram">Instagram</a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Sugar Chocolate. All rights reserved. Made with ❤️ by <a href="https://www.webriseglobal.com">Webrise Global</a> </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
