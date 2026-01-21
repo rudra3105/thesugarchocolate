@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Sugar Chocolates | Artisanal Treats by Shreya</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b7830b",
+                        "background-light": "#fbf8f4",
+                        "background-dark": "#211712",
+                        "chocolate": "#4A2C1B",
+                        "cream-accent": "#EDE7DE"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .gold-border-gradient {
+            border: 1px solid transparent;
+            background: linear-gradient(#fbf8f4, #fbf8f4) padding-box, linear-gradient(to bottom right, #b7830b, #f3f0e7) border-box;
+        }
+        .dark .gold-border-gradient {
+            background: linear-gradient(#211712, #211712) padding-box, linear-gradient(to bottom right, #b7830b, #4A2C1B) border-box;
+        }
+        .grain-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuACI7jg34jBhqxGFHoAmzpbcOMmQ9ZvcF0pt8FANvG_dLTM2IZdjA0myUI4KjnsGfA4GNTl5e9dkO8Ir1qHtf_HQuhZgNbisnkH2dM7XnqWmvpFePOKTFBrnwjjW2VKAI41GjjyJdjMPqyDn9Pejr1zrUdMyE7YwbWCaC8TW4BpHv8UhMGq2dUmi32LC7K_G4lFApNlIoprPCK_Fo_c0rb2fIxBatwvWsYRggZ2rbZe-64pp8ZTHryRbqwsR6u-Ke9F46Oafak1lSQ);
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-chocolate dark:text-cream-accent selection:bg-primary selection:text-white">
+<a class="fixed bottom-8 right-8 z-50 flex items-center justify-center size-14 bg-primary text-white rounded-full shadow-xl hover:scale-110 transition-transform" href="https://wa.me/919876543210" target="_blank">
+<svg class="size-7" fill="currentColor" viewBox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+<div class="relative min-h-screen w-full flex flex-col">
+<header class="sticky top-0 z-40 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-cream-accent dark:border-white/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 text-primary">
+
+</div>
+<img src="/logo.png" style="width: 120px;">
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#chocolates">Chocolates</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#cakes">Cakes</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md transition-all" href="https://wa.me/919876543210">
+                    Order Now
+                </a>
+</nav>
+<button class="md:hidden text-chocolate dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-chocolate/40 to-chocolate/80 z-10"></div>
+<div class="w-full h-full bg-center bg-cover scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqx7xMo2RI-PCBwa9ViYqaF-0n5puvZeTpnYLPNOzxA1-nn9lHuOChOEmUVvGaX350MfBPmA6Cs8HA3sjBTJWOUaguKN3u9sMqlCobJWiu4Ilseqa1OPDWh56TBju5iggQ5HMR9BaagJ5eKemqDBphMYAPUXpbIy4ePYetF-7VTNbjJyYunkwdmSJR70ewn9lKJ4Lc2YunhWcBa3rv7VxFjb2od3h_l9t_KvYls1GbpRfAKGe0_ZITm6YpsdC_nUgg1BbNK-_K6Vs");'></div>
+</div>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<div class="inline-block px-4 py-1 mb-6 border border-primary/40 rounded-full bg-white/10 backdrop-blur-sm">
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Handcrafted Perfection</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-[1.1]">
+                    Artisanal Treats, <br/>Crafted with <span class="italic text-primary">Love</span>
+</h1>
+<p class="text-lg md:text-xl text-white/90 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Indulge in the finest homemade chocolates and bespoke cakes. Every creation is a labor of love by Shreya, using only world-class ingredients.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="min-w-[200px] bg-primary hover:bg-primary/90 text-white py-4 px-8 rounded-xl font-bold shadow-lg transition-all transform hover:-translate-y-1" href="#chocolates">
+                        Explore Collection
+                    </a>
+<a class="min-w-[200px] bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md py-4 px-8 rounded-xl font-bold transition-all" href="#about">
+                        Our Story
+                    </a>
+</div>
+</div>
+</section>
+<section class="py-24 bg-cream-accent/30 dark:bg-background-dark" id="about">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 border border-primary/20 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-0"></div>
+<div class="relative overflow-hidden rounded-xl shadow-2xl aspect-[4/5] bg-center bg-cover" style='background-image: url("/Shreya.jpg")'></div>
+</div>
+<div class="space-y-8">
+<div class="space-y-4">
+<h2 class="text-4xl font-serif font-bold text-chocolate dark:text-white leading-tight">The Artisanal Story <br/>by Shreya</h2>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+<p class="text-lg text-chocolate/80 dark:text-cream-accent/80 leading-relaxed italic font-serif">
+                            "Chocolate is a language of its own. It speaks of celebration, comfort, and pure, unadulterated joy."
+                        </p>
+<p class="text-chocolate/70 dark:text-cream-accent/70 leading-relaxed">
+                            What started as a passion in a small home kitchen has blossomed into 'The Sugar Chocolates'. Shreya believes that luxury lies in the details—the snap of tempered dark chocolate, the velvet melt of ganache, and the delicate balance of flavors in a custom celebration cake.
+                        </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+<h4 class="font-bold">Premium Cocoa</h4>
+<p class="text-sm opacity-70">Ethically sourced ingredients for rich flavor.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">temp_preferences_custom</span>
+<h4 class="font-bold">Bespoke Design</h4>
+<p class="text-sm opacity-70">Every cake tells your unique story.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24" id="chocolates">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center mb-16 space-y-4">
+<span class="text-primary font-bold tracking-widest text-sm uppercase">Cacao Collection</span>
+<h2 class="text-4xl font-serif font-bold">The Chocolate Catalog</h2>
+<p class="text-chocolate/60 dark:text-cream-accent/40 max-w-2xl mx-auto">
+                        Indulge in our range of handcrafted chocolate bites, meticulously prepared in small batches.
+                    </p>
+</div>
+<div class="mb-20">
+<h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-4">
+<span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm">Classic Range</span>
+<span class="flex-1 h-px bg-primary/20"></span>
+</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Dark</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Dark Chocolate (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Pure White</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Pure White Chocolate (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Milk</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Milk Chocolate (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Marble</h4>
+<p class="text-primary font-bold text-xl mb-4">₹15</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Marble Chocolate (₹15)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Strawberry</h4>
+<p class="text-primary font-bold text-xl mb-4">₹15</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Strawberry Chocolate (₹15)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+</div>
+<div class="mb-20">
+<h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-4">
+<span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm">Best Quality</span>
+<span class="flex-1 h-px bg-primary/20"></span>
+</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Pan</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Pan Chocolate (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Very Strawberry</h4>
+<p class="text-primary font-bold text-xl mb-4">₹20</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Very Strawberry Chocolate (₹20)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Crispello</h4>
+<p class="text-primary font-bold text-xl mb-4">₹15</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Crispello Chocolate (₹15)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Choco Chips</h4>
+<p class="text-primary font-bold text-xl mb-4">₹15</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Choco Chips Chocolate (₹15)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Tuti Futi</h4>
+<p class="text-primary font-bold text-xl mb-4">₹15</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Tuti Futi Chocolate (₹15)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-4">
+<span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm">Unique &amp; Bold</span>
+<span class="flex-1 h-px bg-primary/20"></span>
+</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Prank Mirchi</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Prank Mirchi Chocolate (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Orange</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Orange Chocolate (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">Coffee Bites</h4>
+<p class="text-primary font-bold text-xl mb-4">₹12</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order Coffee Bites (₹12)" target="_blank">Order on WhatsApp</a>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-2xl gold-border-gradient flex flex-col items-center text-center">
+<h4 class="font-bold text-lg mb-1">White Choco Chips</h4>
+<p class="text-primary font-bold text-xl mb-4">₹15</p>
+<a class="mt-auto w-full py-2 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg text-sm font-bold transition-all" href="https://wa.me/919876543210?text=I'd like to order White Choco Chips (₹15)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-cream-accent/20 dark:bg-white/5 relative" id="cakes">
+<div class="grain-overlay absolute inset-0 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="flex flex-col items-center text-center mb-16 space-y-4">
+<span class="text-primary font-bold tracking-[0.3em] text-xs uppercase">The Patisserie</span>
+<h2 class="text-5xl font-serif font-bold">Bespoke Cakes</h2>
+<p class="text-chocolate/70 dark:text-cream-accent/70 max-w-2xl">
+                        Hand-baked celebration cakes for your special moments. Fresh, moist, and absolutely divine.
+                    </p>
+<div class="w-12 h-0.5 bg-primary/40"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Black Forest Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Classic layers with cherries and cream (500g)</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹500</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Black Forest Cake (₹500)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Vanilla Pure White</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Elegant and light vanilla celebration cake</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹450</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Vanilla Pure White Cake (₹450)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Fruit Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Loaded with the season's finest fresh fruits</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹600</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Fruit Cake (₹600)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Strawberry Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Seasonal berry delight with fresh frosting</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹450</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Strawberry Cake (₹450)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Blue Berries Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Premium blueberry compote and moist sponge</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹550</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Blue Berries Cake (₹550)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Truffle Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Decadent chocolate ganache for true lovers</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹600</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Truffle Cake (₹600)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Oreo Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Crunchy cookies and cream indulgence</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹500</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Oreo Cake (₹500)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Nutella Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Rich hazelnut spread blended with cocoa</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹600</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Nutella Cake (₹600)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Rasmalai Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Fusion dessert with saffron and nuts</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹550</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Rasmalai Cake (₹550)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col">
+<h4 class="text-2xl font-serif font-bold mb-1">Pineapple Cake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-sm mb-4">Zesty tropical flavor with fresh slices</p>
+<div class="mt-auto pt-6 flex flex-col gap-4">
+<span class="text-3xl font-bold text-primary">₹450</span>
+<a class="text-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors" href="https://wa.me/919876543210?text=I'd like to order Pineapple Cake (₹450)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-3xl shadow-lg border border-primary/10 flex flex-col lg:col-span-2">
+<div class="md:flex gap-8 items-center h-full">
+<div class="flex-1">
+<h4 class="text-3xl font-serif font-bold mb-2">Artisanal Cheesecake</h4>
+<p class="text-chocolate/60 dark:text-cream-accent/50 text-base mb-4">Ultra-creamy, baked to perfection with a signature crust. Our most premium offering.</p>
+<ul class="text-sm space-y-2 mb-6 text-primary font-bold">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">verified</span> New York Style</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">verified</span> Assorted Toppings Available</li>
+</ul>
+</div>
+<div class="flex flex-col gap-4 min-w-[200px] items-center md:items-end">
+<span class="text-4xl font-bold text-primary">₹800</span>
+<a class="w-full text-center bg-primary text-white py-4 px-8 rounded-xl font-bold hover:bg-primary/90 transition-colors shadow-lg" href="https://wa.me/919876543210?text=I'd like to order Cheesecake (₹800)" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-primary/30 text-6xl mb-4">format_quote</span>
+<p class="text-2xl font-serif italic text-chocolate dark:text-cream-accent leading-relaxed">
+                    "The most divine chocolates I have ever tasted. You can truly feel the artisanal care Shreya puts into every single piece. It's not just a dessert; it's an experience."
+                </p>
+<div class="mt-8">
+<p class="font-bold text-sm tracking-widest uppercase">— Aditi Rao, Loyal Customer</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-chocolate text-cream-accent/80 py-16 px-6 lg:px-12" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-2 space-y-6">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8">
+
+</div>
+<img src="/logo.png" style="width: 120px;">
+</div>
+<p class="max-w-sm text-cream-accent/60 leading-relaxed">
+                        Crafting premium homemade chocolates and bespoke cakes for life's most sweet moments. Based in Mumbai, delivered with care.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-bold text-sm tracking-[0.1em] uppercase">Quick Links</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#about">Our Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="#chocolates">Chocolate Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#cakes">Cake Portfolio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gifting Solutions</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-bold text-sm tracking-[0.1em] uppercase">Connect</h4>
+<ul class="space-y-3 text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+                            +91 98765 43210
+                        </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            Ahmedabad, India
+                        </li>
+
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium tracking-wider">
+<p>© 2025 THE SUGAR CHOCOLATES. ALL RIGHTS RESERVED.</p>
+<p class="flex gap-6">
+
+</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
